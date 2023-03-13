@@ -1,0 +1,12 @@
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Array\bin\Debug\net6.0\Array.deps.json
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Array\bin\Debug\net6.0\Array.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Array\bin\Debug\net6.0\Array.pdb
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Array\obj\Debug\net6.0\Array.csproj.AssemblyReference.cache
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Array\obj\Debug\net6.0\Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Array\obj\Debug\net6.0\Array.AssemblyInfoInputs.cache
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Array\obj\Debug\net6.0\Array.AssemblyInfo.cs
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Array\obj\Debug\net6.0\Array.csproj.CoreCompileInputs.cache
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Array\obj\Debug\net6.0\Array.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Array\obj\Debug\net6.0\refint\Array.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Array\obj\Debug\net6.0\Array.pdb
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Array\obj\Debug\net6.0\ref\Array.dll
