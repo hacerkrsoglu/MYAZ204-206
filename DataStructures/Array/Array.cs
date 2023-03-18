@@ -86,4 +86,5 @@ namespace Array
             return _InnerArray.GetEnumerator();
         }
     }
+
 }
