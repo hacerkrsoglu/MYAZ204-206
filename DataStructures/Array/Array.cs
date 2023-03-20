@@ -85,6 +85,18 @@ namespace Array
         {
             return _InnerArray.GetEnumerator();
         }
+        public object[] Copy(int v1, int v2)//v1 dahil v2 dahil değil
+        {
+            var newArray = new object[_InnerArray.Length];
+            int j = 0;
+            for (int i = v1; i < v2; i++)
+            {
+                newArray[j] = _InnerArray[i];
+                j++;
+
+            }
+            return newArray;
+        }
     }
 
 }

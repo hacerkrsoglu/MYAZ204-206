@@ -94,9 +94,9 @@ namespace ArrayTests
         {
             //Arrange
             var array = new Array.Array();
+            array.Add("Ahmet");
             array.Add("Mehmet");
             array.Add("Can");
-            array.Add("Ahmet");
 
             string result = "";
             foreach (var item in array)
@@ -114,7 +114,24 @@ namespace ArrayTests
 
 
         }
+        [Fact]
+        public void Array_Copy_Test()
+        {
+            // Arrange
+            var array = new Array.Array();
 
+            array.Add("Ahmet");     // 0
+            array.Add("Mehmet");    // 1
+            array.Add("Can");       // 2
+            array.Add("Deniz");     // 3
+
+            // Act
+            var newArray = array.Copy(2, 3);
+            var item = newArray[0];
+
+            // Assert
+            Assert.Equal("Can", item);
+        }
 
 
 
