@@ -7,12 +7,18 @@ namespace Array
         private Object[] _InnerArray;//? işsatei koyarak null değer alabiliceğini kabul ediyorum
         private int index = 0;
         public int Count => index; //dizide kaç eleman var 
-        public int Capacity => _InnerArray.Length;
+        public int Capacity => _InnerArray.Length; //lambda readonly ifade anlaına gelir dışarda başka bir sınıfta değer değiştirmesi yapılmaz
 
 
         public Array()
         {
             _InnerArray = new Object[4];//Block Allocation blok olarak yer ayırır
+        }
+        public Array(params Object[] init)
+        {
+            var newArray = new Object[init.Length];
+            System.Array.Copy(init, newArray, init.Length);
+            _InnerArray = newArray;
         }
         public void Add(Object item)
         {
@@ -38,6 +44,13 @@ namespace Array
                 throw new IndexOutOfRangeException();
             return _InnerArray[position];
         }
+        public void SetItem(int position, Object item)
+        {
+            if (position < 0 || position >= _InnerArray.Length)
+                throw new IndexOutOfRangeException();
+            _InnerArray[position] = item;
+
+        }
 
         public Object Remove()
         {
@@ -53,13 +66,23 @@ namespace Array
         public Object RemoveItem(int position)
         {
             // throw new NotImplementedException();
-            var item = GetItem(position);
-            if (item != null)
+            if (position < 0 || position >= _InnerArray.Length)
+                throw new IndexOutOfRangeException();
+            var item = _InnerArray[position];
+            _InnerArray[position] = null;
+            for (int i = 0; i < _InnerArray.Length - 1; i++)
             {
-                _InnerArray[position] = null;
-                return item;
+                Swap(i, i + 1);
             }
-            return -1;
+            index--;
+            if (index == _InnerArray.Length / 2)
+            {
+                var newArray = new Object[_InnerArray.Length / 2];
+                System.Array.Copy(_InnerArray, newArray, newArray.Length);
+                _InnerArray = newArray;
+
+            }
+            return item;
         }
         public void Swap(int p1, int p2)
         {
