@@ -10,10 +10,7 @@ namespace LinkedList.Singly
     {
         public SinglyLinkedListNode<T>? Head { get; set; }
         //bağlı listenin başına eleman ekler
-        public SinglyLinkedList()
-        {
-
-        }
+       
         public void AddFirst(T item)
         {
             //düğüm oluşturman gerekir.
@@ -22,7 +19,7 @@ namespace LinkedList.Singly
                 Value = item
             };
             //Head boş mu? hiçç bu elemanda eleman var mı?
-            if(Head != null)
+            if(Head is null)
             {
                 Head = node;
                 return;
@@ -30,8 +27,8 @@ namespace LinkedList.Singly
             node.Next = Head;
             Head = node;
             return;
-        }
-        // bağlı listenin sonuna eleman ekler.
+        }  
+        //bağlı listenin sonuna eleman ekler.
         public void AddLast(T item)
         {
             // T ifadesini düğüme çevir
@@ -44,9 +41,9 @@ namespace LinkedList.Singly
                 return;
             }
 
-            // Son elemana kadar git
+            // Son elemana kadar git //sonra eklemeyi yap
             var current = Head;
-            var prev = current;
+            var prev = current;//önceki eleman
             while (current != null)
             {
                 prev = current;

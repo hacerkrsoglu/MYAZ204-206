@@ -18,7 +18,7 @@ namespace SinglyLinkedListTests
                 Value = 10
             };
 
-            var node2 = new SinglyLinkedListNode<int>(20);
+            var node2 = new SinglyLinkedListNode<int>(20);//ifade struct değer tipli
 
             // act
             node1.Next = node2;

@@ -2,6 +2,15 @@
 using LinkedList.Singly;
 
 
+var linkedList = new SinglyLinkedList<int>();
+linkedList.AddFirst(10);
+linkedList.AddFirst(20);
+linkedList.AddFirst(30);
+
+
+Console.WriteLine(linkedList.Head);
+Console.WriteLine(linkedList.Head.Next);
+Console.WriteLine(linkedList.Head.Next.Next);
 
 
 
@@ -25,12 +34,12 @@ Console.WriteLine(node1.Next);
 Console.WriteLine(node2.Next);
 Console.WriteLine(node1.Next.Next);
 
-Console.WriteLine(new String('-',20));
+Console.WriteLine(new String('-', 20));
 
 var current = node1;
-while(current != null)
+while (current != null)
 {
-    Console.Write($"{ current,-5}");
+    Console.Write($"{current,-5}");
     current = current.Next;
 }
 
