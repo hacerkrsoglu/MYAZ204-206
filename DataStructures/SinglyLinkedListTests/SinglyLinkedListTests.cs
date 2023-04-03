@@ -101,6 +101,20 @@ namespace SinglyLinkedListTests
         }
 
         [Fact]
+        public void SinglyLinkedList_AddBefore_ThrowExceptionTest()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+            linkedList.AddFirst('a');   // a
+            linkedList.AddFirst('b');   // b - a
+            linkedList.AddFirst('c');   // c - b - a
+
+            var node = new SinglyLinkedListNode<char>('y');
+
+            // assert
+            Assert.Throws<Exception>(() => linkedList.AddBefore(node, 'x'));
+        }
+        [Fact]
         public void SinglyLinkedList_AddBefore_Throw_ExceptionTest()
         {
             // arrange 
@@ -113,6 +127,204 @@ namespace SinglyLinkedListTests
 
             // assert
             Assert.Throws<Exception>(() => linkedList.AddBefore(node, 'x'));
+        }
+
+        
+        [Fact]
+        public void SinglyLinkedList_AddAfter_Test()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+            linkedList.AddFirst('a');   // a
+            linkedList.AddFirst('b');   // b - a
+            linkedList.AddFirst('c');   // c - b - a
+
+            linkedList.AddAfter(linkedList.Head.Next, 'x');  // c b [x] a
+
+
+            // assert
+            Assert.Equal(linkedList.Head.Value, 'c');
+            Assert.Equal(linkedList.Head.Next.Next.Value, 'x');
+
+        }
+
+        
+        [Fact]
+        public void SinglyLinkedList_AddAfter_Throw_ExceptionTest()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+            linkedList.AddFirst('a');   // a
+            linkedList.AddFirst('b');   // b - a
+            linkedList.AddFirst('c');   // c - b - a
+
+            var node = new SinglyLinkedListNode<char>('y');
+
+            // assert
+            Assert.Throws<Exception>(() => linkedList.AddAfter(node, 'x'));
+        }
+
+        
+        [Fact]
+        public void SinglyLinkedList_RemoveFirst_Test()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+            linkedList.AddFirst('a');   // a
+            linkedList.AddFirst('b');   // b - a
+            linkedList.AddFirst('c');   // c - b - a
+
+            var item = linkedList.RemoveFirst();  // b a
+
+
+            // assert
+            Assert.Equal('c', item);
+            Assert.Equal('b', linkedList.Head.Value);
+        }
+
+    
+        [Fact]
+        public void SinglyLinkedList_RemoveFirst_One_Item_Test()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+            linkedList.AddFirst('a');   // a
+
+            var item = linkedList.RemoveFirst();  // null
+
+
+            // assert
+            Assert.Equal('a', item);
+            Assert.True(linkedList.Head is null);
+        }
+
+        [Fact]
+        public void SinglyLinkedList_RemoveFirst_Exception_Test()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+
+            // assert
+            Assert.Throws<Exception>(() => linkedList.RemoveFirst());
+        }
+
+        
+        [Fact]
+        public void SinglyLinkedList_RemoveLast_Test()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+            linkedList.AddFirst('a');   // a
+            linkedList.AddFirst('b');   // b - a
+            linkedList.AddFirst('c');   // c - b - a
+
+            // act
+            var item1 = linkedList.RemoveLast();
+            var item2 = linkedList.RemoveLast();
+            var item3 = linkedList.RemoveLast();
+
+            // assert
+            Assert.Equal('a', item1);
+            Assert.Equal('b', item2);
+
+            // -> Son eleman
+            Assert.Equal('c', item3);
+        }
+
+       
+        [Fact]
+        public void SinglyLinkedList_RemoveLast_Exception_Test()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+
+            // assert
+            Assert.Throws<Exception>(() => linkedList.RemoveLast());
+        }
+
+        [Fact]
+        public void SinglyLinkedList_Remove_LastItem_Test()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+            linkedList.AddFirst('a');   // a
+            linkedList.AddFirst('b');   // b - a
+            linkedList.AddFirst('c');   // c - b - a
+
+            var node = new SinglyLinkedListNode<char>('a');
+
+            // act
+            var item1 = linkedList.Remove(node);
+
+            // assert
+            Assert.Equal('a', item1);
+        }
+
+        [Fact]
+        public void SinglyLinkedList_Remove_MiddleItem_Test()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+            linkedList.AddFirst('a');   // a
+            linkedList.AddFirst('b');   // b - a
+            linkedList.AddFirst('c');   // c - b - a
+
+            var node = new SinglyLinkedListNode<char>('b');
+
+            // act
+            var item1 = linkedList.Remove(node);
+
+            // assert
+            Assert.Equal('b', item1);
+        }
+
+        [Fact]
+        public void SinglyLinkedList_Remove_FirstItem_Test()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+            linkedList.AddFirst('a');   // a
+            linkedList.AddFirst('b');   // b - a
+            linkedList.AddFirst('c');   // c - b - a
+
+            var node = new SinglyLinkedListNode<char>('c');
+
+            // act
+            var item1 = linkedList.Remove(node);
+
+            // assert
+            Assert.Equal('c', item1);
+        }
+
+        [Fact]
+        public void SinglyLinkedList_Remove_Exception_Test()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+
+            var node = new SinglyLinkedListNode<char>('b');
+
+            // act
+
+            // assert
+            Assert.Throws<Exception>(() => linkedList.Remove(node));
+        }
+
+        public void SinglyLinkedList_Remove_Exception2_Test()
+        {
+            // arrange 
+            var linkedList = new SinglyLinkedList<char>();
+            linkedList.AddFirst('a');   // a
+            linkedList.AddFirst('b');   // b - a
+            linkedList.AddFirst('c');   // c - b - a
+
+            var node = new SinglyLinkedListNode<char>('x');
+
+            // act
+
+            // assert
+            Assert.Throws<Exception>(() => linkedList.Remove(node));
+
         }
     }
 }
