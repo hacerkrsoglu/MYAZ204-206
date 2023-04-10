@@ -9,8 +9,9 @@ namespace LinkedList.Singly
 {
     public class SinglyLinkedList<T>: IEnumerable<T>
     {
+        private int _count = 0;
         public SinglyLinkedListNode<T>? Head { get; set; } //auto imolemented propertty
-                                                           //bağlı listenin başına eleman ekler
+        public int Count => _count;                                                   //bağlı listenin başına eleman ekler
         public SinglyLinkedList()
         {
 
@@ -34,10 +35,12 @@ namespace LinkedList.Singly
             if(Head is null)
             {
                 Head = node;
+                _count++;
                 return;
             }
             node.Next = Head;
             Head = node;
+            _count++;
             return;
         }  
         //bağlı listenin sonuna eleman ekler.
@@ -50,6 +53,7 @@ namespace LinkedList.Singly
             if (Head is null)
             {
                 Head = node;
+                _count++;
                 return;
             }
 
@@ -62,6 +66,7 @@ namespace LinkedList.Singly
                 current = current.Next;
             }
             prev.Next = node;
+            _count++;
             return;
 
         }
@@ -85,6 +90,7 @@ namespace LinkedList.Singly
                 {
                     newNode.Next = prev.Next;
                     prev.Next = newNode;
+                    _count++;
                     return;
                 }
                 prev = current;
@@ -111,6 +117,7 @@ namespace LinkedList.Singly
                 {
                     new_node.Next = current.Next;
                     current.Next = new_node;
+                    _count++;
                     return;
                 }
 
@@ -133,6 +140,7 @@ namespace LinkedList.Singly
             T item = Head.Value;
 
             Head = Head.Next;
+            _count--;
 
             return item;
         }
@@ -153,6 +161,7 @@ namespace LinkedList.Singly
             {
                 T item = current.Value;
                 Head = null;
+                _count--;
                 return item;
             }
 
@@ -187,6 +196,7 @@ namespace LinkedList.Singly
                 {
                     T item = node.Value;
                     current.Next = current.Next.Next;
+                    _count--;
                     return item;
                 }
                 current = current.Next;
