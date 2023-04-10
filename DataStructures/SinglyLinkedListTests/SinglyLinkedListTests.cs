@@ -309,7 +309,7 @@ namespace SinglyLinkedListTests
             // assert
             Assert.Throws<Exception>(() => linkedList.Remove(node));
         }
-
+        [Fact]
         public void SinglyLinkedList_Remove_Exception2_Test()
         {
             // arrange 
@@ -325,6 +325,20 @@ namespace SinglyLinkedListTests
             // assert
             Assert.Throws<Exception>(() => linkedList.Remove(node));
 
+        }
+        [Fact]
+        public void SinglyLinkedList_Get_Enumerator_Test()
+        {
+            //Arrange && Act
+            var list = new SinglyLinkedList<char>(new HashSet<char>("samsun".ToArray()));
+
+            Assert.Collection<char>(list,
+
+                item => Assert.Equal('n', item),
+                item => Assert.Equal('u', item),
+                item => Assert.Equal('m', item),
+                item => Assert.Equal('a', item),
+                item => Assert.Equal('s', item));
         }
     }
 }

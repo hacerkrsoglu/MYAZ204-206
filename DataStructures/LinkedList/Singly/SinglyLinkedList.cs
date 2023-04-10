@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +7,22 @@ using System.Threading.Tasks;
 
 namespace LinkedList.Singly
 {
-    public class SinglyLinkedList<T>
+    public class SinglyLinkedList<T>: IEnumerable<T>
     {
-        public SinglyLinkedListNode<T>? Head { get; set; }
-        //bağlı listenin başına eleman ekler
-       
+        public SinglyLinkedListNode<T>? Head { get; set; } //auto imolemented propertty
+                                                           //bağlı listenin başına eleman ekler
+        public SinglyLinkedList()
+        {
+
+        }
+        public SinglyLinkedList(IEnumerable<T> collection)
+        {
+            foreach (var item in collection)
+            {
+                AddFirst(item); //o(1) başa ekleme daha hızlıdır.
+            }
+
+        }
         public void AddFirst(T item)
         {
             //düğüm oluşturman gerekir.
@@ -180,6 +192,16 @@ namespace LinkedList.Singly
                 current = current.Next;
             }
             throw new Exception("Node not found!");
+        }
+
+        public IEnumerator<T> GetEnumerator()// referans tutucu Ienumator
+        {
+            return new SinglyLinkedListEnumerator<T>(Head); //poliformizm
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }
