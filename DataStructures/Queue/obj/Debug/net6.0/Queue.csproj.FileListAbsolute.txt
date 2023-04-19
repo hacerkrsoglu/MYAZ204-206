@@ -1,0 +1,15 @@
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\bin\Debug\net6.0\Queue.deps.json
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\bin\Debug\net6.0\Queue.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\bin\Debug\net6.0\Queue.pdb
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\bin\Debug\net6.0\LinkedList.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\bin\Debug\net6.0\LinkedList.pdb
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\obj\Debug\net6.0\Queue.csproj.AssemblyReference.cache
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\obj\Debug\net6.0\Queue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\obj\Debug\net6.0\Queue.AssemblyInfoInputs.cache
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\obj\Debug\net6.0\Queue.AssemblyInfo.cs
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\obj\Debug\net6.0\Queue.csproj.CoreCompileInputs.cache
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\obj\Debug\net6.0\Queue.csproj.CopyComplete
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\obj\Debug\net6.0\Queue.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\obj\Debug\net6.0\refint\Queue.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\obj\Debug\net6.0\Queue.pdb
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\Queue\obj\Debug\net6.0\ref\Queue.dll
