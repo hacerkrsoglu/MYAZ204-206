@@ -100,3 +100,5 @@ C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithmTest\obj\Debug\ne
 C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithmTest\obj\Debug\net6.0\SortAlgorithmTest.pdb
 C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithmTest\obj\Debug\net6.0\SortAlgorithmTest.genruntimeconfig.cache
 C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithmTest\obj\Debug\net6.0\ref\SortAlgorithmTest.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithmTest\bin\Debug\net6.0\Utilities.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithmTest\bin\Debug\net6.0\Utilities.pdb

@@ -1,0 +1,15 @@
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\bin\Debug\net6.0\RecursiveApp.exe
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\bin\Debug\net6.0\RecursiveApp.deps.json
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\bin\Debug\net6.0\RecursiveApp.runtimeconfig.json
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\bin\Debug\net6.0\RecursiveApp.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\bin\Debug\net6.0\RecursiveApp.pdb
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\obj\Debug\net6.0\RecursiveApp.csproj.AssemblyReference.cache
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\obj\Debug\net6.0\RecursiveApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\obj\Debug\net6.0\RecursiveApp.AssemblyInfoInputs.cache
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\obj\Debug\net6.0\RecursiveApp.AssemblyInfo.cs
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\obj\Debug\net6.0\RecursiveApp.csproj.CoreCompileInputs.cache
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\obj\Debug\net6.0\RecursiveApp.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\obj\Debug\net6.0\refint\RecursiveApp.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\obj\Debug\net6.0\RecursiveApp.pdb
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\obj\Debug\net6.0\RecursiveApp.genruntimeconfig.cache
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\RecursiveApp\obj\Debug\net6.0\ref\RecursiveApp.dll

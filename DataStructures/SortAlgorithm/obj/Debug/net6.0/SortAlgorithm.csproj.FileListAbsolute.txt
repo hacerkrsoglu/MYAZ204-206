@@ -10,3 +10,6 @@ C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithm\obj\Debug\net6.0
 C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithm\obj\Debug\net6.0\refint\SortAlgorithm.dll
 C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithm\obj\Debug\net6.0\SortAlgorithm.pdb
 C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithm\obj\Debug\net6.0\ref\SortAlgorithm.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithm\bin\Debug\net6.0\Utilities.dll
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithm\bin\Debug\net6.0\Utilities.pdb
+C:\Users\Hacer\Desktop\MYAZ204-206\DataStructures\SortAlgorithm\obj\Debug\net6.0\SortAlgorithm.csproj.CopyComplete
